@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>arvel's The Avengers</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1341465_u1j0pq2qmmj.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1343310_7b3gq84ycg6.css">
+    <style>
+        html,
+        body{
+            height: 100%;
+            
+        }
+        body{
+            font: 15px/1.5 arial;
+            background-color: #eee;
+            color:#444;
+        }
+        header{
+            height: 100%;
+            min-height: 600px;
+            background: url(../abcccc/images/timg.jpg) center
+            center no-repeat;
+            background-size: cover;
+        }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+      a{
+        text-decoration: none;
+        }    
+      ul{
+        list-style-type:none;
+        }
+      .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+        }
+      .button{
+          font-size: 18px;
+          color: #fff;
+          background-color: coral;
+          padding: 8px 15px;
+          border-radius: 8px;
+          opacity: 0.8;
+         
+        }
+      .button:hover{
+          opacity: 1;
+        }
+        header .logo{
+            color: #f3a200;
+            font-size: 40px;
+            float: left;
+            margin-top: 10px;
+        }
+        header .nav{
+            float: right;
+        }
+        header .nav>li{
+            float: left;
+            margin: 10px;
+        }
+        header .nav a{
+            color: red;
+            font-size: 15px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        header .nav a:hover{
+            background:blueviolet;
+        }
+        .layout{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header .intro{
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color:#fff;
+        }
+        header .intro h2{
+            font-size: 30px;
+        }
+        header .intro h3{
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        header .intro .button{
+            margin-top: 20px;
+            
+        }
+
+        section{
+            text-align: center;
+            margin-top: 100px;
+        }
+        section >h3{
+            font-size: 30px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        section >h5{
+            padding: 150px;
+        }
+        section > p{
+            margin-top: 20px;
+        }
+        .watch .iconfont {
+            font-size: 130px;
+            color: #f3a200;
+        }
+        section .watch >li{
+            float: left;
+            width: 33.33%;
+            padding: 20px 30px;
+        }
+        section > ul p{
+            margin-top: 40px;
+        }
+        section .introduction figure{
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            height: 500px;
+            float: left;
+        }
+        section .introduction img{
+            width: 100%;
+            height: 100%;
+        }
+        section .introduction a{
+            display: block;
+            height: 400px;
+        }
+        section .introduction a :hover{
+            opacity:0.7;
+        }
+        section .introduction figcaption{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        section .introduction p{
+            font-size: 15px;
+            color: #444;
+        }
+        section .about >li{
+            margin-top:30px;
+            position: relative;
+        }
+        section .about >li:nth-child(odd){
+            padding-right: calc(50% - 100px);
+            text-align: right;
+        }
+        section .about >li::after{
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        section .about img,
+        section .about .img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid lightblue;
+            display: inline-block;
+        }
+        section .about .img{
+            display: inline-block;
+            padding-top: 75px;
+            text-align: center;
+        }
+        section .about li:nth-child(odd) dl{
+            margin-right: 220px;
+        }
+        section .about >li:nth-child(odd) img{
+            float: right;
+        }
+        section .about >li:nth-child(even){
+            padding-left: calc(50% - 100px);
+            text-align: left;
+        }
+        section .about >li:nth-child(even) dl{
+            margin-left: 220px;
+        }
+        section .about >li:nth-child(even) img{
+            float: left;
+        }
+        section .about dt{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        section .about dd:nth-child(2) {
+            color:#666;
+        }
+        section .about > li::before{
+            content: "";
+            display: inline-block;
+            height: 30px;
+            width: 2px;
+            background-color: lightblue;
+            position: absolute;
+            left: 50%;
+            top:200px;
+        }
+        section .about >li:last-child::before{
+            height: 0;
+        }
+        section .Prize img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid lightblue;
+        }
+        section .Prize>li{
+            float: left;
+            width: 33.33%;
+            padding: 20px 30px;
+        }
+        .Prize .iconfont{
+            font-size: 35px;
+            color:black;
+        }
+        .footer1{
+            background:#ffffff;
+        }
+        .footer1 img{
+            width: 100%;
+            height: 100px;
+        }
+        .footer1 >ul >li{
+            float: left;
+            width: 33.33%;
+            padding: 20px 70px;
+        }
+        footer {
+            text-align: center;
+            height: 880px;
+            position: relative;
+            background: url(images/timgOA9F07VM.jpg)center
+            center no-repeat;
+            background-size: cover;
+        }
+        footer h2{
+            color: #eee;
+            font-size: 30px;
+            padding: 40px;
+        }
+        .Contact{
+            float: left;
+        }
+        .a input{
+            width: 400px;
+            height: 80px;
+            margin: 20px 30px;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        .Contact2 textarea{
+            width: 600px;
+            height: 320px;
+            margin-top: 20px;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        .contact3{    
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 1100px;
+            }
+        .button2{
+           font-size: 18px;
+           color: #fff;
+           background-color: coral;
+           padding: 8px 100px;
+           border-radius: 8px;
+           opacity: 0.8;
+           margin-top: 620px;
+           display: inline-block;
+        }
+        .end >ul >li{
+            float: left;
+            width: 33.33%;
+            padding: 20px ;
+            display: block;
+            text-align: center;
+        }
+        .end >ul >li .iconfont{
+            font-size: 30px;
+            color:dimgray;
+        }
+        .end >ul{
+            display: block;
+        }
+        .end{
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="navbar layout clearfix">
+        <a class="logo" href="#" >arvel's The Avengers</a>
+        <ul class="nav clearfix">
+            <li><a href="#">在线观看</a></li>
+            <li><a href="#">角色介绍</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">获奖记录</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="intro layout ">
+            <h2>Welcome to the arvel's The Avengers</h2>
+            <h3>It is a sci-fi action movie produced by Marvel Pictures</h3>
+            <a class="button" href="">TELL ME MORE</a>
+      </div>
+    </header>
+    <main class="layout">
+            <section>
+                <h3>在线观看</h3>
+                <p>观看的软件</p>
+                <ul class=" watch clearfix">
+                    <li>
+                        <span class="iconfont icon-1"></span>
+                        <h4>爱奇艺</h4>
+                        <p>爱奇艺成立伊始，坚持“悦享品质”的公司理念，以“用户体验”为生命，通过持续不断的技术投入、产品创新，为用户提供清晰、流畅、界面友好的观映体验。</p>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-2"></span>
+                        <h4>腾讯视频</h4>
+                        <p>腾讯视频上线于2011年4月，是在线视频平台，拥有流行内容和专业的媒体运营能力，是聚合热播影视、综艺娱乐、体育赛事、新闻资讯等为一体的综合视频内容平台</p>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-3"></span>
+                        <h4>优酷视频</h4>
+                        <p>优酷是由古永锵于2006年6月21日创立 并正式上线。  优酷现为阿里巴巴文化娱乐集团大优酷事业群下的视频平台。</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>角色介绍</h3>
+                <p>关于影片中人物的介绍</p>
+                <div class="introduction clearfix">
+                    <figure>
+                        <a href=""><img src="images/gangtiexia.jpg" alt=""></a>
+                        <figcaption>钢铁侠</figcaption>
+                        <p>托尼·斯塔克是斯塔克工业的继承人，他的父亲霍华德是神盾局的创始人之一</p>
+                    </figure>
+                    <figure>
+                        <a href=""><img src="images/meiguoduizhang.jpg" alt=""></a>
+                        <figcaption>美国队长</figcaption>
+                        <p>正义热血的美国队长原是二战时期一名瘦弱的普通士兵，因参加“超级战士重生计划”成为唯一一个成功的实验品而拥有了超越常人的体能</p>
+                    </figure>
+                    <figure>
+                        <a href=""><img src="images/leishen.jpg" alt=""></a>
+                        <figcaption>雷神</figcaption>
+                         <p>复仇者联盟中的非地球人类成员，对弟弟洛基爱恨交织。索尔是奥丁的亲生儿子，阿斯加德的王位继承人。他年轻气盛，鲁莽耿直，曾因自负被流放地球</p>
+                    </figure>
+                    <figure>
+                        <a href=""><img src="images/lvjvren.jpg" alt=""></a>
+                        <figcaption>绿巨人</figcaption>
+                        <p>科学家布鲁斯·班纳博士在一次实验中误被伽马射线所伤，随后他便发现，当自己陷入愤怒或恐惧的情绪中时，不能控制的心跳加速会让自己变身成为一个体格庞大、力量无穷但不受意志控制的绿色巨人</p>
+                    </figure>
+                    <figure>
+                        <a href=""><img src="images/heiguafu.jpg" alt=""></a>
+                        <figcaption>黑寡妇</figcaption>
+                        <p>原是秘密组织神盾局的一名俄国籍女探员，体态婀娜面容姣好，头脑清晰行动敏捷，身手不凡强硬凶狠，是神盾局的精英特工</p>
+                    </figure>
+                    <figure>
+                        <a href=""><img src="images/yingyan.jpg" alt=""></a>
+                        <figcaption>鹰眼</figcaption>
+                        <p>他是在马戏团长大的孤儿，因超一流的箭术被神盾局指挥官尼克·弗瑞慧眼识珠，加入复仇者联盟。鹰眼侠行动迅速果敢，个性低调沉稳，出招百发百中，极其擅长狙击</p>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <h2>关于</h2>
+                <p>关于影片</p>
+                <ul class="about">
+                    <li>
+                        <img src="images/meiguoduizhangban.jpg" alt="">
+                        <dl>
+                            <dt>美国队长3d版</dt>
+                            <dd>本名：史蒂芬·罗杰斯</dd>
+                            <dd>正义热血的美国队长原是二战时期一名瘦弱的普通士兵，因参加“超级战士重生计划”成为唯一一个成功的实验品而拥有了超越常人的体能。在二战中他曾立下赫赫战功，但在驱逐红骷髅的最终战役里，罗杰斯遭重创而被冰封，约七十年后才重新醒来。随后他加入了复仇者联盟。</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/gangtiexiaban.jpg" alt="">
+                        <dl>
+                            <dt>钢铁侠</dt>
+                            <dd>本名：托尼·斯塔克</dd>
+                            <dd>托尼·斯塔克是斯塔克工业的继承人，他的父亲霍华德是神盾局的创始人之一。在一次绑架事故中，托尼发明了一套动力增强装甲，这套装备由金钛合金制成，有一定的局限性，会损耗。穿上盔甲后，托尼变身成了复仇者联盟中惩恶扬善的钢铁侠。</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/heiguafuban.jpg" alt="">
+                        <dl>
+                            <dt>黑寡妇</dt>
+                            <dd>本名：娜塔莎·罗曼诺夫</dd>
+                            <dd>原是秘密组织神盾局的一名俄国籍女探员，体态婀娜面容姣好，头脑清晰行动敏捷，身手不凡强硬凶狠，是神盾局的精英特工。娜塔莎最初被安排在斯塔克工业内部作为卧底，负责监视钢铁侠托尼·斯塔克，后正式加入复仇者联盟。她也是这次成军的复仇者联盟中唯一的女性成员。 </dd>
+                            </dl>
+                    </li>
+                    <li>
+                        <img src="images/leishen.jpg" alt="">
+                        <dl>
+                            <dt>雷神</dt>
+                            <dd>本名：索尔·奥丁森</dd>
+                            <dd>复仇者联盟中的非地球人类成员，对弟弟洛基爱恨交织。索尔是奥丁的亲生儿子，阿斯加德的王位继承人。他年轻气盛，鲁莽耿直，曾因自负被流放地球。索尔关心的主要问题是维护包括阿斯加德与地球在内的九大世界的和平，以及搞好与兄弟洛基的关系。祸不单行，这两件事同时出了麻烦。</dd>
+                        </dl>
+                    </li>
+                    <li>
+                            <span class="img">Be Part 
+                                    Of Our 
+                                    Story!</span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>获奖记录</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <ul class="Prize clearfix">
+                    <li>
+                        <img src="images/g1.jpg" alt="">
+                        <dl>
+                            <dt>2013年</dt>
+                            <dd>mtv电影奖</dd>
+                        </dl>
+                        <a href=""><span class="iconfont icon-qq"></span></a>
+                        <a href=""><span class="iconfont icon-facebook"></span></a>
+                        <a href=""><span class="iconfont icon-info"></span></a>
+                    </li>
+                    <li>
+                        <img src="images/g2.jpg" alt="">
+                        <dl>
+                            <dt>2013年</dt>
+                            <dd>土星奖</dd>
+                        </dl>
+                        <a href=""><span class="iconfont icon-qq"></span></a>
+                        <a href=""><span class="iconfont icon-facebook"></span></a>
+                        <a href=""><span class="iconfont icon-info"></span></a>
+                    </li>
+                    <li>
+                        <img src="images/g3.jpg" alt="">
+                        <dl>
+                            <dt>2013年</dt>
+                            <dd>奥斯卡金像奖</dd>
+                        </dl>
+                        <a href=""><span class="iconfont icon-qq"></span></a>
+                        <a href=""><span class="iconfont icon-facebook"></span></a>
+                        <a href=""><span class="iconfont icon-info"></span></a>
+                    </li>    
+                </ul>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</h5>
+            </section>
+    </main>
+    <div class="footer1 clearfix">
+        <ul>
+            <li>
+                <a href=""><img src="images/yingwenziti1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="images/yingwenziti2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="images/yingwenziti3.jpg" alt=""></a>
+            </li>
+        </ul>
+
+    </div>
+    <footer>
+        
+        <h2>联系我们</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="clearfix contact3">
+        <div class="Contact">
+            <ul class="a">
+                <li>
+                    <input type="text" placeholder="YOUR NAME *">
+                </li>
+                <li>
+                    <input type="text" placeholder="YOUR EMALL *">
+                </li>
+                <li>
+                    <input type="text" placeholder="YOUR PHONE *">
+                </li>
+            </ul>
+        </div>
+        <div class="Contact2">
+            <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE *"></textarea>
+        </div>
+    </div>
+    <a class="button2" href="">send message</a>
+    </footer>
+    <div class="end">
+        <ul class="clearfix">
+            <li>
+                <p>Copyright © Your Website 2014 </p>
+            </li>
+            <li>
+                <a  href=""><span class="iconfont icon-qq"></span></a>
+                <a  href=""><span class="iconfont icon-facebook"></span></a>
+                <a href=""><span class="iconfont icon-info"></span></a>
+            </li>
+            <li>
+                <a  href="">Privacy Policy</a>
+                <a  href="">Terms of Use </a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
